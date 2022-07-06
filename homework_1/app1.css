@@ -1,0 +1,87 @@
+body {
+  background-color: rgb(124, 68, 124);
+}
+.card {
+  background-color: rgba(30, 13, 59, 0.959);
+  margin: 50px auto;
+  border-radius: 25px;
+}
+
+.card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid transparent;
+  outline: 3px solid rgb(124, 68, 124);
+  margin: 35px auto 5px;
+}
+.badge {
+  background-color: gold;
+  padding: 7px 10px;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: 500;
+  color: black;
+  position: absolute;
+  left: 25px;
+  top: 35px;
+}
+
+.card-body,
+small {
+  color: white;
+}
+.card-body {
+  text-align: center;
+  padding: 5px 25px 30px;
+}
+
+h5 {
+  padding: 5px 0;
+}
+h5,
+a {
+  text-transform: capitalize;
+}
+
+p,
+a {
+  font-size: 16px;
+  padding: 8px 0;
+}
+
+.link1,
+.link2 {
+  text-decoration: none;
+  padding: 7px 17px;
+  border: 2px solid rgb(124, 68, 124);
+  border-radius: 3px;
+  margin: 0 5px !important;
+}
+.link1 {
+  background-color: rgb(124, 68, 124);
+  color: white;
+}
+.link1:hover {
+  color: black;
+}
+.link2 {
+  color: rgb(124, 68, 124);
+}
+.link2:hover {
+  color: white;
+}
+
+.list-group-item {
+  display: inline-block;
+  color: white;
+  margin: 12px 3px 0;
+  padding: 6px 10px;
+  box-shadow: 0px 1px 3px rgb(94, 93, 93);
+  border: 3px;
+  font-size: 14px;
+}
+.list {
+  padding: 0;
+}
