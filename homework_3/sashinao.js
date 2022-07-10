@@ -98,8 +98,7 @@ let result2 = users.filter((array_memeber, index) => {
 // შევქმნათ ცვლადი X რომლის მნიშვნელობა იქნება სტრინგი , X მნიშვნელობის მიხედვით მოვიძიოთ USERS მასივში არსებული ელემენტის იდექსი და წავშალოთ
 
 users.unshift((x = 'ADMIN1'));
+console.log(users);
 
-// console.log(users);
-
-let delete_member = users.splice(users.indexOf(x), 1);
+users.splice(users.indexOf(x), 1);
 console.log(users);
