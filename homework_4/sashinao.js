@@ -9,7 +9,7 @@
 
 let product = {
   ფოტო: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnmR2Oq0qIwROcc-bQz0mgoSHT-eatU7U08w&usqp=CAU',
-  რაოდენობა: '17',
+  რაოდენობა: '17 ცალი',
   წონა: '300 გრ',
   ფასი: '45 ₾',
 };
