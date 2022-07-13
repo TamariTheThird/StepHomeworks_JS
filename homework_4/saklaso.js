@@ -10,14 +10,14 @@ let user_cards = [
     image: '',
     user: 'Satyan Tiwani',
     position: 'web developer',
-    text: `   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur possimus ipsa eos nihil consequatur nostrum fugit beatae molestiae esse! Excepturi iure, aliquid voluptatum minus pariatur ut eveniet quidem sunt non magnam optio officiis consequatur recusandae nulla autem! Eaque obcaecati architecto error, quasi placeat culpa. Officiis.`,
+    text: `   Lorem ipsum dolor sit, amet consectetur adipisicing elit. consequatur recusandae nulla autem! Eaque obcaecati architecto error, quasi placeat culpa. Officiis.`,
     link: '',
   },
   {
     image: '',
     user: 'Salim Malik',
     position: 'front-end developer',
-    text: `   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur possimus ipsa eos nihil consequatur nostrum fugit beatae molestiae esse! Excepturi iure, aliquid voluptatum minus pariatur ut eveniet quidem sunt non magnam optio officiis consequatur recusandae nulla autem! Eaque obcaecati architecto error, quasi placeat culpa. Officiis.`,
+    text: `  Excepturi iure, aliquid voluptatum minus pariatur ut eveniet quidem sunt non magnam optio officiis consequatur recusandae nulla autem! Eaque obcaecati architecto error, quasi placeat culpa. Officiis.`,
     link: '',
   },
 ];
@@ -25,7 +25,7 @@ let user_cards = [
 let finduser = user_cards.forEach((el) => {
   let users = `
       <div class="card col-lg-4 mx-auto">
-      
+      <img src="${el.image}" class="card-img-top" alt="Photo">
        <div class="card-body">
          <h5 class="card-title">${el.user}</h5>
          <p class="card-text">${el.position}</p>
