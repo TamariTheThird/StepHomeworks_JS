@@ -18,10 +18,10 @@ console.log(Object.keys(product));
 console.log(Object.values(product));
 console.log(product);
 
-// for (const key in product) {
-//   const object = product[key];
-//   console.log(object);
-// }
+for (const key in product) {
+  const object = product[key];
+  console.log(object);
+}
 
 // 1) შევქმნათ მეთოდი(ფუნქცია) რომელიც დაითვლის არის თუ არა მარაგში პრიოდუქტი რაოდენობის მიხედვით
 // 2) თუ რაოდენობა  უდრის 0 გამოვიტანოთ მნიშვნელობა მარაგი ამოიწურა , თუ 0 მეტია გამოვიტანოთ რაოდენობა
