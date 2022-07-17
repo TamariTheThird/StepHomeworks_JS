@@ -7,34 +7,50 @@
 // დავბეჭდოთ პროდუქტის ობიექტის ყველა value
 // დავბეჭდოთ პროდუქტის ობიექტის  key  value ერთად
 
-let product = {
+const product = {
   ფოტო: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnmR2Oq0qIwROcc-bQz0mgoSHT-eatU7U08w&usqp=CAU',
-  რაოდენობა: '17 ცალი',
-  წონა: '300 გრ',
-  ფასი: '45 ₾',
+  რაოდენობა: '0',
+  წონა: '300',
+  ფასი: '45',
 };
 
-console.log(Object.keys(product));
-console.log(Object.values(product));
-console.log(product);
+let keys = Object.keys(product);
+document.getElementById(`result`).innerHTML += keys + '<br>' + '<br>';
 
-for (const key in product) {
-  const object = product[key];
-  console.log(object);
-}
+let values = Object.values(product);
+document.getElementById(`result`).innerHTML += values + '<br>' + '<br>';
 
-// 1) შევქმნათ მეთოდი(ფუნქცია) რომელიც დაითვლის არის თუ არა მარაგში პრიოდუქტი რაოდენობის მიხედვით
+let key_values = Object.entries(product);
+document.getElementById(`result`).innerHTML += key_values;
+
+console.log(values);
+console.log(key_values);
+
+// 1) შევქმნათ მეთოდი(ფუნქცია) რომელიც დაითვლის არის თუ არა მარაგში პროდუქტი რაოდენობის მიხედვით
 // 2) თუ რაოდენობა  უდრის 0 გამოვიტანოთ მნიშვნელობა მარაგი ამოიწურა , თუ 0 მეტია გამოვიტანოთ რაოდენობა
+
+function quantity() {
+  if (product.რაოდენობა < 0 && product.რაოდენობა.match(/\w/ | /\W/g)) {
+  } else if (product.რაოდენობა == 0) {
+    return `მარაგი ამოიწურა`;
+  } else if (product.რაოდენობა > 0) {
+    return product.რაოდენობა + ' ცალი';
+  } else {
+    return `ინფორმაცია არ არსებობს`;
+  }
+}
 
 // 3) მოცემული ინფორმაცია გამოგვაქვს html ში bootstrap card მეშვეობით
 
 let product_card = `
   <div class="card" style="width:360px;">
-    <img src="${product.ფოტო}" class="card-img-top" alt="ProductPhoto">
+    <img src="${
+      product.ფოტო
+    }" class="card-img-top" alt="ProductPhoto" style="height:300px";>
     <div class="card-body">
-      <p class="quantity">რაოდენობა: ${product.რაოდენობა}</p>
-      <p class="weight">წონა: ${product.წონა}</p>
-      <p class="price">ფასი: ${product.ფასი}</p>
+      <p class="quantity">რაოდენობა: ${quantity()}</p>
+      <p class="weight">წონა: ${product.წონა} გრ.</p>
+      <p class="price">ფასი: ${product.ფასი} ₾</p>
     </div>
   </div>
   `;
@@ -42,17 +58,25 @@ document.getElementById('result1').innerHTML += product_card;
 
 // 4) შევქმნათ ფუნქცია რომელიც ჩაანაცვლებს პროდუქტების ობიექტის რაიმე თვისების მნიშვნელობას ახალი თვისებით
 
-product.ფასი = '30 ₾';
+function changes() {
+  let new_quantity = (product.რაოდენობა = 32);
+  let new_photo = (product.ფოტო =
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiXglnj0dtahJReLGxW8px2WuPAWuX1SxUAg&usqp=CAU');
+  let new_price = (product.ფასი = 20);
 
-let product_card1 = `
+  product_card = `
   <div class="card" style="width:360px;">
-    <img src="${product.ფოტო}" class="card-img-top" alt="ProductPhoto">
-    <div class="card-body">
-      <p class="quantity">რაოდენობა: ${product.რაოდენობა}</p>
-      <p class="weight">წონა: ${product.წონა}</p>
-      <p class="price">ფასი: ${product.ფასი}</p>
-    </div>
+   <img src="${
+     product.ფოტო
+   }" class="card-img-top" alt="ProductPhoto" style="height:300px";>
+   <div class="card-body">
+      <p class="quantity">რაოდენობა: ${quantity()} </p>
+      <p class="weight">წონა: ${product.წონა} გრ</p>
+     <p class="price">ფასი: ${product.ფასი} ₾ </p>
   </div>
-  `;
+   </div>
+   `;
+  return product_card;
+}
 
-document.getElementById('result1').innerHTML += product_card1;
+document.getElementById('result2').innerHTML += changes();

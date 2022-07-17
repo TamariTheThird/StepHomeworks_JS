@@ -36,14 +36,13 @@ let new_string = (document.getElementById('array1').innerHTML += ` ${auto[0]}
 
 // დავალება 2
 // 1) შევიტანოთ მასივში სიტყვა "FRONT-END" და FOR ციკლის შიგნით გავაკეთოთ ჩანაცვლება სიტყვა "BACK-END" - ით (REPLACE())
+// let array = ['GRAPHIC DESIGN', 'UX/UI DESIGN', 'DATA ANALYSIS'];
+// array.push('FRONT-END');
 
-let array = ['GRAPHIC DESIGN', 'UX/UI DESIGN', 'DATA ANALYSIS'];
-array.push('FRONT-END');
-
-for (let new_array in array) {
-  array[3] = `${array[3].replace(`${array[3]}`, 'back-end').toUpperCase()}`;
-  document.getElementById('array2').innerHTML = array;
-}
+// for (let new_array in array) {
+//   array[3] = `${array[3].replace(`${array[3]}`, 'back-end').toUpperCase()}`;
+//   document.getElementById('array2').innerHTML = array;
+// }
 
 // array[3] = `${array[3].replace(`${array[3]}`, 'back-end').toUpperCase()}`;
 // document.getElementById('array2').innerHTML = array;
