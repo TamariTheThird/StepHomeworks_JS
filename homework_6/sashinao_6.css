@@ -1,0 +1,41 @@
+#one,
+#two,
+#three {
+  width: 500px;
+  height: 270px;
+  margin: 20px;
+  border: 1px solid grey;
+  text-align: center;
+  padding: 15px;
+  position: relative;
+}
+
+#btn1,
+#btn2,
+#btn3 {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.box,
+#txt {
+  width: 250px;
+  height: 120px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#bg_green {
+  background-color: green;
+}
+
+#bg_blue {
+  background-color: blue;
+}
+
+#txt {
+  bottom: 30px;
+}
