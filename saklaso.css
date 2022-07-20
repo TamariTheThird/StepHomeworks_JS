@@ -1,0 +1,15 @@
+.btn_pop {
+  padding: 10px 25px;
+  background-color: green;
+  border: none;
+  border-radius: 17px;
+  color: white;
+}
+
+.pop {
+  margin: 30px auto;
+}
+
+.content {
+  display: none;
+}
