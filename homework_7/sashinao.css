@@ -1,0 +1,137 @@
+/* დავალება 7_1 */
+
+.form_frame {
+  width: 700px;
+  height: 500px;
+  margin: 50px;
+}
+
+.option {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.option label {
+  margin-left: 7px;
+}
+
+.alert {
+  background-color: rgb(176, 224, 243);
+  padding: 10px 10px 0px;
+  font-size: 18px;
+  color: rgba(95, 33, 153, 0.884);
+  font-weight: normal;
+}
+
+.type {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* დავალება 7_2 */
+
+nav {
+  background-color: rgb(73, 73, 241);
+  height: 8vh;
+}
+
+.main h3 {
+  text-align: center;
+  padding: 20px 0;
+}
+.sidebar h3 {
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+.bi::before {
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+}
+
+.burger_menu {
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  margin-left: 10px;
+  position: relative;
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  background-color: rgb(73, 73, 241);
+  height: 100vh;
+  width: 40vw;
+  box-shadow: 1px 1px 8px rgba(128, 128, 128, 0.699);
+  transition: all 0.5s;
+  transform: translateX(-100%);
+}
+
+.sidebar_toggled {
+  transform: translateX(0);
+  transition: all 0.5s;
+}
+
+.menu_toggled {
+  margin-left: 40vw;
+  transition: all 0.5s;
+}
+
+/* დავალება 7_3 */
+
+.frame {
+  width: 100%;
+  height: 100vh;
+}
+
+.open {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.open,
+.close {
+  padding: 15px 45px;
+  border: none;
+  background-color: crimson;
+  color: white;
+  font-size: 17px;
+}
+
+.close {
+  margin: 10px 0;
+}
+
+h1,
+h5 {
+  margin: 15px 0;
+}
+
+.new_modal {
+  background-color: rgb(99, 97, 97);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+}
+
+.open_mod {
+  visibility: visible;
+}
+
+.modal_txt {
+  width: 530px;
+  height: 300px;
+  background-color: white;
+  padding: 60px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
